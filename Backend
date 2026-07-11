@@ -1,0 +1,74 @@
+ Backend
+
+The backend is developed using **Java** and **Spring Boot**. It handles the application's business logic, processes user requests, communicates with the MySQL database, and provides REST APIs for the frontend.
+
+Technologies Used
+
+- Java
+- Spring Boot
+- Spring MVC
+- Spring Data JPA
+- Hibernate
+- Maven
+- REST API
+
+Backend Features
+
+- User authentication and authorization
+- RESTful API development
+- Crop yield prediction request processing
+- Data validation and error handling
+- MySQL database integration
+- CRUD operations for user and crop data
+- Prediction history management
+- Exception handling and logging
+
+Backend Modules
+
+- **Controller** – Handles HTTP requests and sends responses to the frontend.
+- **Service** – Contains the business logic for processing crop yield predictions.
+- **Repository** – Interacts with the MySQL database using Spring Data JPA.
+- **Model (Entity)** – Defines database tables and application objects.
+- **Configuration** – Manages database connections and application settings.
+
+Responsibilities
+
+- Receive requests from the frontend.
+- Validate user inputs.
+- Process crop and environmental data.
+- Interact with the Machine Learning model (if integrated).
+- Store and retrieve data from the MySQL database.
+- Return prediction results to the frontend through REST APIs.
+
+ Backend Folder Structure
+
+```text
+backend/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── controller/
+│   │   │   ├── service/
+│   │   │   ├── repository/
+│   │   │   ├── model/
+│   │   │   ├── config/
+│   │   │   └── AiCropYieldPredictionApplication.java
+│   │   │
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   │
+│   └── test/
+│
+├── pom.xml
+└── mvnw
+```
+
+Backend Workflow
+
+1. The frontend sends a request to the Spring Boot application.
+2. The controller receives the request.
+3. The service layer processes the business logic.
+4. The repository accesses the MySQL database.
+5. The prediction result is generated and returned to the frontend through REST APIs.
