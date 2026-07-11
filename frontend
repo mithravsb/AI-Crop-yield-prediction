@@ -1,0 +1,52 @@
+Frontend
+
+The frontend provides an interactive and user-friendly interface that allows users to access the AI Crop Yield Prediction system through a web browser. It is designed to offer a responsive and seamless experience across different devices.
+
+### Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+
+Frontend Features
+
+- Responsive and attractive user interface
+- User Registration and Login pages
+- Crop details input form
+- Validation of user inputs
+- Prediction result display
+- Navigation menu for easy access
+- Mobile-friendly design
+
+Frontend Modules
+
+- **Home Page** – Provides an introduction to the application.
+- **Login Page** – Allows registered users to securely log in.
+- **Registration Page** – Enables new users to create an account.
+- **Crop Prediction Page** – Collects crop and environmental details from the user.
+- **Prediction Result Page** – Displays the predicted crop yield.
+- **Contact/About Page** – Provides project information and contact details.
+
+ Responsibilities
+
+- Collect user input through web forms.
+- Validate input before sending it to the backend.
+- Send requests to the Spring Boot REST APIs.
+- Display prediction results received from the backend.
+- Provide an easy-to-use and responsive interface.
+
+ Frontend Folder Structure
+
+```text
+frontend/
+│
+├── css/
+├── js/
+├── images/
+├── index.html
+├── login.html
+├── register.html
+├── prediction.html
+└── result.html
+```
